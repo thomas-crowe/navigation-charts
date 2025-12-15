@@ -1,0 +1,56 @@
+{
+  "initialScreenId": "home",
+  "screens": {
+    "home": {
+      "id": "home",
+      "title": "Welcome",
+      "tiles": [
+        { "label": "Start", "targetId": "level1" },
+        { "label": "Settings", "targetId": "settings" }
+      ]
+    },
+    "level1": {
+      "id": "level1",
+      "title": "Select a Category",
+      "tiles": [
+        { "label": "Option A", "targetId": "level2a" },
+        { "label": "Option B", "targetId": "level2b" },
+        { "label": "Option C", "targetId": "level2c" }
+      ]
+    },
+     "level2a": {
+      "id": "level2a",
+      "title": "Option A Details",
+      "tiles": [
+        { "label": "Detail 1", "targetId": "end" },
+        { "label": "Detail 2", "targetId": "end" }
+      ]
+    },
+    "level2b": {
+        "id": "level2b",
+        "title": "Option B Details",
+        "tiles": [
+            { "label": "Detail 1", "targetId": "end" }
+        ]
+    },
+    "level2c": {
+        "id": "level2c",
+        "title": "Option C Details",
+        "tiles": []
+    },
+    "settings": {
+        "id": "settings",
+        "title": "Settings",
+        "tiles": [
+            { "label": "Go Back", "targetId": "home" }
+        ]
+    },
+    "end": {
+        "id": "end",
+        "title": "Finished",
+        "tiles": [
+            { "label": "Restart", "targetId": "home" }
+        ]
+    }
+  }
+}
